@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form </title>
+</head>
+<body>
+  <main>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    <section class="container">
+
+    <!-- form  -->
+      <form id="survey-form" action="">
+                                 <!-- Name Label and input  -->
+          <label for="name" id="name-label"> Name: <br>
+            <input type="text" id="name" class="designed_box" placeholder="Enter your name">
+          </label>
+          <br>
+          <!-- Email Input -->
+          <label for="email" id="email-label"> Email: <br>
+            <input type="email" id="email"class="designed_box" name="email" placeholder="Enter your Email" required >
+          </label>
+          <br>
+          <!--  Age (number)  -->
+          <label for="number" id="number-label"> Age: (optional) <br>
+            <input type="number" id="number" class="designed_box" name="age" min="10" max="99"  placeholder="Age">
+          </label>
+          <!-- Question uses Dropdown box -->
+          <p>Which option best describes your current role? </p>
+          <select name="" id="dropdown" class="designed_box" aria-placeholder="Select current role">
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <!-- Another question with Radio buttons -->
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <input type="radio" id="option-1" name="recommend" value="definitely">
+          <label for="option-1">Definitely</label> <br>
+          <input type="radio" id="option-2" name="recommend" value="Maybe">
+          <label for="option-2">Maybe</label> <br>
+          <input type="radio" id="option-3" name="recommend" value="Notsure">
+          <label for="option-3">Notsure</label> <br>
+
+
+          <!--  Another Question with Checkboxes -->
+            <p>What would you like to see improved? (check all that apply)</p>
+            <input type="checkbox" name="improvements" id="front-end projects" value="Front-end projects">
+            <label for="fron-end projects">Front-end projects</label>
+            <br>
+            <input type="checkbox" name="improvements" id="back-end projects" value="back-end projects">
+            <label for="back-end projects">Back-end projects</label>
+            <br>
+            <input type="checkbox" name="improvements" id="Data Visualization" value="Data Visualization">
+            <label for="Data Visualization">Data Visualization</label>
+            <br>
+            <input type="checkbox" name="improvements" id="challenges" value="challenges">
+            <label for="challenges">Challenges</label>
+            <br>
+            <input type="checkbox" name="improvements" id="open sourcce community" value="open sourcce community">
+            <label for="open sourcce community">Open Sourcce Community</label>
+            <br>
+            <input type="checkbox" name="improvements" id="gitter help rooms" value="gitter help rooms">
+            <label for="gitter help rooms">Gitter help rooms</label>
+            <br>
+            <input type="checkbox" name="improvements" id="videos" value="videos">
+            <label for="videos">Videos</label>
+            <br>
+            <input type="checkbox" name="improvements" id="city Meetups" value="city Meetups">
+            <label for="city Meetups">City Meetups</label>
+            <br>
+            <input type="checkbox" name="improvements" id="Wiki" value="Wiki">
+            <label for="Wiki">Wiki</label>
+            <br>
+            <input type="checkbox" name="improvements" id="forum" value="forum">
+            <label for="forum">Forum</label>
+            <br>
+            <input type="checkbox" name="improvements" id="additional courses" value="additional courses">
+            <label for="additional courses">Additional Courses</label>
+            <br>
+            <br>
+            <!-- textarea box for comments -->
+
+            <p>Any comments or suggestions? </p>
+            <textarea name="" id="" cols="30" rows="10" resize="both"  placeholder="Enter your comment here.."></textarea>
+
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>
